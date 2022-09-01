@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import bnb from "../Assests/bnb.png";
+import { ThemeContext } from "../Context/theme";
 
 export default function Footer() {
+  const [{theme,isDark},toggleTheme] = useContext(ThemeContext)
+
   return (
     <footer>
       <Container fluid className="footer_container">
@@ -17,6 +20,9 @@ export default function Footer() {
                 style={{ marginBottom: "10px", marginLeft: "25px" }}
               ></img>
               <p className="footer_header">Powered by Binance Chain</p>
+              <button type="button" onClick={toggleTheme}>
+                Toggle theme
+              </button>
             </div>
             <div className="footer_text">
               <p>

@@ -4,6 +4,7 @@ const themes = {
   dark: {
     backgroundColor: "#252525",
     color: "white",
+    mainbg : "#212121"
   },
   light: {
     backgroundColor: "white",

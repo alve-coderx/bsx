@@ -5,12 +5,13 @@ const Transactions = () => {
   const [{theme}] = useContext(ThemeContext);
 
   return (
-    <Col className='col-lg-6 col-md-12 col-sm-12 p-5 shadow '>
+    <Col className='col-lg-5 col-md-12 col-sm-12  p-4 shadow' style={{backgroundColor:theme.backgroundColor}}>
       <div>
         <strong>Latest Transactions</strong>
         <hr/>
       </div>
-      <div style={{overflowY:'scroll'}}>
+      <div>
+        <div style={{overflowY : "scroll"}}>
         {[1,2,3,4,5,6].map((ind)=>(
           <div>
             <div className='d-flex justify-content-between'>
@@ -33,6 +34,8 @@ const Transactions = () => {
             <hr/>
           </div>
         ))}
+        </div>
+
       </div>
       <Button className='w-100 btn btn-outline-info'>View All Transactions</Button>
 

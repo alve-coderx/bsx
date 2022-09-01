@@ -10,8 +10,8 @@ export default function BscMain2() {
   const [{theme,isDark},toggleTheme] = useContext(ThemeContext)
   const [selected, setSelected] = useState("transfers");
   return (
-    <Container fluid style={{backgroundColor:theme.backgroundColor}} className='d-flex justify-content-center'>
-        <Row className="col-lg-12">
+    <Container fluid style={{backgroundColor:theme.mainbg}} className='d-flex justify-content-center'>
+        <Row className="col-lg-12 d-flex justify-content-around">
           <Blocks/>
           <Transactions/>        
         </Row>

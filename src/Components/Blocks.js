@@ -5,7 +5,7 @@ import { ThemeContext } from '../Context/theme'
 const Blocks = () => {
   const [{theme}] = useContext(ThemeContext);
   return (
-    <Col className='col-lg-6 col-md-12 col-sm-12 p-5 shadow'>
+    <Col className='col-lg-5 col-md-12 col-sm-12 p-4 shadow' style={{backgroundColor:theme.backgroundColor}}>
       <div>
         <strong>Latest Blocks</strong>
         <hr/>

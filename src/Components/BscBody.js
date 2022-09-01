@@ -5,12 +5,9 @@ import BscMain2 from "./BscMain2";
 import {ThemeContext} from "../Context/theme"
 
 export default function BscBody() {
-  const [{theme,isDark},toggleTheme] = useContext(ThemeContext)
+  const [{theme}] = useContext(ThemeContext)
   return (
-    <div id="bodybsc" style={{backgroundColor: theme.backgroundColor, color: theme.color}}>
-      <button type="button" onClick={toggleTheme}>
-        Toggle theme
-      </button>
+    <div id="bodybsc" style={{color: theme.color,backgroundColor : theme.mainbg}}>
       <BscHeading />
       <div className="seperator seperator-big"></div>
       <BscMain />

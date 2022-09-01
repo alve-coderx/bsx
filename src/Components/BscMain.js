@@ -14,77 +14,53 @@ export default function BscMain() {
     setShowCirculatingCap(!showCirculatingCap);
 
   return (
-    <Container fluid style={{backgroundColor : theme.backgroundColor}}>
-      <Row className="flex justify-content-center">
-        <Col className="col-lg-4 col-md-12 mt-5" >
-          <Toast style={{width:"460px",backgroundColor : theme.backgroundColor}}>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3" className="rounded" style={{width : '20px'}} alt="" />
-              <strong className="me-auto">
-                BNB PRICE 
-              </strong> <br/>
-              <strong className="me-auto">
-                $276.57 @ 0.013839 BTC (-3.98%)
-              </strong>
-            </Toast.Body>
+    <Container className="mb-5" style={{backgroundColor : theme.backgroundColor}}>
+      <Row className=" shadow rounded ">
+        <Col className="col-lg-4 col-md-12 col-sm-12 col-12 p-3">
+          <div className="d-flex">
+            <img style={{width:"20px"}} src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3"/>
+            <p className="ms-3">
+              BNB PRICE <br/>
+              $276.33 @ 0.013869 BTC (-3.30%)</p>
+          </div>
             <hr/>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/icons/icon-8.svg" className="rounded" style={{width : '20px'}} alt="" />
-              <strong>
-                BNB MARKET CAP ON BSC
-              </strong><br/>
-              <strong>
-                $6,227,162,973.00 (22,515,685 BNB)
-              </strong>
-            </Toast.Body>
-          </Toast>
+          <div className="d-flex">
+            <img style={{width:"20px"}} src="https://bscscan.com/images/svg/icons/icon-8.svg"/>
+            <p className="ms-3">
+              BNB PRICE <br/>
+              $276.33 @ 0.013869 BTC (-3.30%)</p>
+          </div>
         </Col>
-        <Col className="col-lg-4 col-md-12 mt-5" >
-          <Toast style={{width:"460px",backgroundColor : theme.backgroundColor}}>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3" className="rounded" style={{width : '20px'}} alt="" />
-              <strong className="me-auto">
-                BNB PRICE 
-              </strong> <br/>
-              <strong className="me-auto">
-                $276.57 @ 0.013839 BTC (-3.98%)
-              </strong>
-            </Toast.Body>
+        <Col className="col-lg-4 col-md-12 col-sm-12 col-12 p-3">
+          <div className="d-flex">
+            <img style={{width:"20px"}} src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3"/>
+            <p className="ms-3">
+              BNB PRICE <br/>
+              $276.33 @ 0.013869 BTC (-3.30%)</p>
+          </div>
             <hr/>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/icons/icon-8.svg" className="rounded" style={{width : '20px'}} alt="" />
-              <strong>
-                BNB MARKET CAP ON BSC
-              </strong><br/>
-              <strong>
-                $6,227,162,973.00 (22,515,685 BNB)
-              </strong>
-            </Toast.Body>
-          </Toast>
+          <div className="d-flex">
+            <img style={{width:"20px"}} src="https://bscscan.com/images/svg/icons/icon-8.svg"/>
+            <p className="ms-3">
+              BNB PRICE <br/>
+              $276.33 @ 0.013869 BTC (-3.30%)</p>
+          </div>
         </Col>
-        <Col className="col-lg-4 col-md-12 mt-5" >
-          <Toast style={{width:"460px",backgroundColor : theme.backgroundColor}}>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3" className="rounded" style={{width : '20px'}} alt="" />
-              <strong className="me-auto">
-                BNB PRICE 
-              </strong> <br/>
-              <strong className="me-auto">
-                $276.57 @ 0.013839 BTC (-3.98%)
-              </strong>
-            </Toast.Body>
-            <hr/>
-            <Toast.Body>
-              <img src="https://bscscan.com/images/svg/icons/icon-8.svg" className="rounded" style={{width : '20px'}} alt="" />
-              <strong>
-                BNB MARKET CAP ON BSC
-              </strong><br/>
-              <strong>
-                $6,227,162,973.00 (22,515,685 BNB)
-              </strong>
-            </Toast.Body>
-          </Toast>
-        </Col>
+          <Col className="col-lg-4 col-md-12 col-sm-12 col-12 p-3">
+            <div className="d-flex">
+              <img style={{width:"20px"}} src="https://bscscan.com/images/svg/brands/bnb-1.svg?v=1.3"/>
+              <p className="ms-3">
+                BNB PRICE <br/>
+                $276.33 @ 0.013869 BTC (-3.30%)</p>
+            </div>
+              <hr/>
+            <div className="d-flex">
+              <img style={{width:"20px"}} src="https://bscscan.com/images/svg/icons/icon-8.svg"/>
+              <p className="ms-3">
+                BNB PRICE <br/>
+                $276.33 @ 0.013869 BTC (-3.30%)</p>
+            </div>
+          </Col>
       </Row>
     </Container>
   );

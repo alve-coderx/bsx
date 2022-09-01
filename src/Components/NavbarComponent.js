@@ -7,16 +7,16 @@ import { ThemeContext } from "../Context/theme";
 export default function NavbarComponent() {
   const [{theme}] = useContext(ThemeContext)
   return (
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor : theme.backgroundColor}}>
-      <Container>
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor : theme.mainbg, color : theme.color}}>
+      <Container fluid>
         <Navbar.Brand href="#home">
           <LogoNavbar/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" style={{color : theme.color}}>
-            <Nav.Link href="#features">Home</Nav.Link>
-            <NavDropdown title="Blockchain"  id="collasible-nav-dropdown">
+          <Nav className="ms-auto" >
+            <Nav.Link href="#features" >Home</Nav.Link>
+            <NavDropdown title="Blockchain"  id="collasible-nav-dropdown" style={{color:theme.color}}>
               <NavDropdown.Item href="#action/3.1" >Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" >
                 Another action
