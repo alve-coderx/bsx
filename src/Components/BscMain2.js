@@ -12,7 +12,7 @@ export default function BscMain2() {
   const [{theme,isDark},toggleTheme] = useContext(ThemeContext)
   const [selected, setSelected] = useState("transfers");
   return (
-    <Container fluid style={{backgroundColor:theme.mainbg}} className='d-flex justify-content-center'>
+    <Container fluid style={{backgroundColor:theme.mainbg}} className='pb-5 d-flex justify-content-center'>
         <Row className="col-12 d-flex justify-content-around">
         <div className="table-responsive col-lg-6">
           <table className="table">
