@@ -13,7 +13,7 @@ import BsxSearch from './BsxSearchBar'
 
 export default function BscHeading() {
   return (
-    <div className="container2" style={{height:'25vh',backgroundColor:'black'}}>
+    <div className="container2" style={{height:'25vh'}}>
       <Row className="align-items-center">
           <Col className="col-lg-7">
             <h2 className="text-warning">

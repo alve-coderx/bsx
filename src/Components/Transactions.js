@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { Button, Col, Table } from 'react-bootstrap'
 import { ThemeContext } from '../Context/theme'
+import TableScrollbar from 'react-table-scrollbar';
+
 const Transactions = () => {
   const [{theme}] = useContext(ThemeContext);
 

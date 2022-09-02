@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import bnb from "../Assests/bnb.png";
 import { ThemeContext } from "../Context/theme";
-
+import { FiSun ,FiMoon } from 'react-icons/fi';
 export default function Footer() {
   const [{theme,isDark},toggleTheme] = useContext(ThemeContext)
 
@@ -20,9 +20,9 @@ export default function Footer() {
                 style={{ marginBottom: "10px", marginLeft: "25px" }}
               ></img>
               <p className="footer_header">Powered by Binance Chain</p>
-              <button type="button" onClick={toggleTheme}>
-                Toggle theme
-              </button>
+              <p onClick={toggleTheme} className="text-light px-2 py-1 border rounded-circle ms-3">
+                {isDark ? <FiSun/> : <FiMoon/>}
+              </p>              
             </div>
             <div className="footer_text">
               <p>
